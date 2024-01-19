@@ -1,0 +1,444 @@
+:root {
+  --primary-color: #ffc300;
+  --secondary-color: #000814;
+  --bg: #000814;
+  --heading1: "Rubik", sans-serif;
+  --heading2: "Montserrat", sans-serif;
+  --font-size: 16px;
+}
+* {
+  font-family: var(--heading2);
+}
+font {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Rubik", sans-serif;
+}
+.back {
+  background-color: var(--bg);
+}
+.navbar .container-fluid {
+  padding: 1rem 7%;
+}
+.navbar {
+  background: transparent;
+}
+.navbar.scrollY {
+  background-color: #00040a;
+  transition: linear 0.2s;
+}
+.navbar .navbar-brand {
+  font-family: var(--heading1);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.navbar .navbar-nav .nav-link {
+  font-family: var(--heading1);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #fff;
+  margin-right: 3rem;
+}
+.navbar .loginnn button {
+  font-family: var(--heading1);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  padding: 0.625rem 1.875rem;
+  color: #fff;
+}
+.navbar .loginnn .left-btn {
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.signup {
+  width: 100%;
+  max-width: 30rem;
+  background-color: #fff0bd;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transform: scale(0);
+}
+.signup.signupShow {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  transition: linear 0.2s;
+}
+.loginv2 {
+  background-color: #535353;
+  border-radius: 20px;
+  position: absolute;
+  width: 100%;
+  max-width: 30rem;
+  height: 25rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  top: 200%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 1rem;
+  transition: ease-in-out 0.2s;
+}
+.loginv2.show {
+  top: 50%;
+}
+.signup .login-nice,
+.signup .login-nice2 {
+  border: none;
+  background: transparent;
+  font-weight: 500;
+  font-size: 1.1rem;
+}
+.signup .close-login {
+  cursor: pointer;
+}
+.hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/hero.png);
+  background-position: center;
+  background-size: cover;
+}
+.hero .container-fluid {
+  padding: 1rem 7%;
+}
+.hero .content {
+  width: 100%;
+  max-width: 70rem;
+  margin: auto;
+  color: #fff;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  color: #fff;
+}
+.hero h1 span {
+  font-size: 3.6rem;
+  font-style: normal;
+  font-weight: 800;
+  color: var(--primary-color);
+}
+.hero p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.hero .btn-hero button {
+  padding: 0.625rem 2.1875rem;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  font-family: var(--heading1);
+}
+
+.hero .btn-hero .right-btn {
+  background-color: var(--primary-color);
+}
+.hero .btn-hero .left-btn {
+  background-color: var(--secondary-color);
+}
+.service {
+  margin: 5rem 0;
+  color: #fff;
+}
+.service .container-fluid {
+  padding: 1rem 7%;
+}
+.service h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.service .card-service {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.9375rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #00040a;
+  margin: 1rem;
+  height: 20.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.service .card-service .content {
+  width: 100%;
+  max-width: 30rem;
+  margin: auto;
+}
+.card-service .content img {
+  width: 5rem;
+  height: 5rem;
+  margin-bottom: 1rem;
+}
+.card-service .content h3 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.tentang {
+  margin: 5rem 0;
+  color: #fff;
+}
+.tentang .container-fluid {
+  padding: 1rem 7%;
+}
+.tentang .row img {
+  width: 100%;
+  border-radius: 20px;
+}
+.tentang h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.tentang .row h3 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.tentang .row h3 span {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.tentang .row p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.tentang .row .btn {
+  background-color: var(--primary-color);
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+  padding: 0.625rem 4.125rem;
+  border-radius: 1.0625rem;
+}
+.pelatih {
+  margin: 5rem 0;
+  color: #fff;
+}
+.pelatih .container-fluid {
+  padding: 1rem 7%;
+}
+.pelatih h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.pelatih .card-pelatih {
+  margin: 1rem 0;
+}
+.pelatih img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 1rem;
+}
+.pelatih span {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.harga {
+  margin: 5rem 0;
+  color: #fff;
+}
+.harga .container-fluid {
+  padding: 1rem 7%;
+}
+.harga .text-harga {
+  width: 100%;
+  max-width: 53.75rem;
+}
+.harga h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.harga p {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.harga .card-harga {
+  width: 100%;
+  border-radius: 1.8125rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: #000814;
+  height: auto;
+  margin: 1rem;
+}
+
+.harga .card-harga .content .header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 0.5rem;
+}
+.card-harga .content .header span {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.card-harga .content .header h3 {
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.card-harga .mid span {
+  list-style: none;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 500;
+  margin: 1rem 0;
+}
+.card-harga .fasilitas-tambahan h4 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.card-harga .mid {
+  padding: 0 1rem;
+}
+.card-harga .mid .fasilitas-tambahan {
+  padding: 1rem 0;
+}
+.card-harga .fasilitas-tambahan li {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.card-harga .footer-harga a {
+  padding: 1.125rem 0.9375rem;
+  border-radius: 0.8125rem;
+  background: #ffc300;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+.suasana {
+  margin: 5rem 0;
+  color: #fff;
+}
+.suasana .container-fluid {
+  padding: 1rem 7%;
+}
+.suasana h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.suasana .videoGym {
+  width: 100%;
+  height: 27.5625rem;
+  border-radius: 3.75rem;
+}
+.suasana .card-galery {
+  display: flex;
+  height: 20rem;
+  gap: 1rem;
+}
+.suasana .card-galery > div {
+  flex: 3;
+  border-radius: 2.75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-size: auto 100%;
+  transition: all 0.8s cubic-bezier(0.25, 0.4, 0.45, 1.4);
+}
+.suasana .card-galery > div:hover {
+  flex: 5;
+}
+.kontak {
+  margin: 5rem 0;
+  color: #fff;
+  background-color: #00040a;
+}
+.kontak .container-fluid {
+  padding: 1rem 7%;
+}
+.kontak h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+.kontak h3 {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+}
+.kontak span {
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+}
+.kontak img {
+  width: 2.5625rem;
+  height: 2.5625rem;
+}
+.kontak .map {
+  height: 24rem;
+}
+footer .container-fluid {
+  padding: 1rem 7%;
+  color: #ffc300;
+}
+footer img {
+  width: 3rem;
+  height: 3rem;
+}
+footer h2 {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  font-family: var(--heading1);
+}
+footer .bot {
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+@media only screen and (max-width: 1366px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 62.6%;
+  }
+  .suasana .card-galery > div:hover {
+    flex: 10;
+  }
+}
